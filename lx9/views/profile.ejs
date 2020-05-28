@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>this is <%= websiteName %> page!</h1>
+  <!-- <p><strong>age:</strong><%= data.age %></p>
+  <p><strong>name:</strong><%= data.name %></p> -->
+  <h2>
+    <ul>
+      <% data.forEach((item)=>{ %>
+        <hr/>
+        <!-- <li>age:<%= item.age %> - name:<%= item.name %></li> -->
+        <li>age:<%= item.age %> </li>
+        <% item.name.forEach((user)=>{ %>
+          <li>name:<%= user %></li>
+        <% }) %>
+      <% }) %>
+    </ul>
+  </h2>
+</body>
+</html>
